@@ -1,0 +1,22 @@
+{
+  "name": "webpack-5-stats-no-exit",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:maclockard/webpack-5-stats-no-exit.git",
+  "author": "Mac Lockard <maclockard@gmail.com>",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "build": "REPRO=true webpack-cli",
+    "watch": "webpack-cli --watch",
+    "serve": "REPRO=true webpack-dev-server",
+    "repro": "REPRO=true yarn watch",
+    "no-repro": "REPRO=false yarn watch"
+  },
+  "devDependencies": {
+    "html-webpack-plugin": "^5.3.1",
+    "webpack": "^5.28.0",
+    "webpack-cli": "^4.5.0",
+    "webpack-dev-server": "4.0.0-beta.1"
+  }
+}
